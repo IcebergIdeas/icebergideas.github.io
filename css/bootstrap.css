@@ -267,7 +267,12 @@ img,
 svg {
   vertical-align: middle;
 }
-
+.partner {
+  width: 40px;
+  /*max-width: 50%;*/
+  height: auto;
+  border: solid 1px red;
+}
 table {
   caption-side: bottom;
   border-collapse: collapse;
