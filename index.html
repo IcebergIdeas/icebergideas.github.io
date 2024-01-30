@@ -73,7 +73,6 @@
 
 <main>
     <section class="py-5 text-center container">
-
         <div class="row py-lg-5">
             <div class="col-lg-10 col-md-10 mx-auto">
                 <h1 class="fw-light">The improvement of your company, your teams, and your individuals is our goal.</h1>
@@ -81,6 +80,7 @@
                     consulting,
                     training, and coaching that fits your needs.<br/>How can we help your teams today?</p>
                 <p>
+                    <!-- TODO: use collapse to provide details on consulting and coaching   -->
                     <a href="#" class="btn btn-primary my-2" style="background-color: #0085ac">Consulting</a>
                     <a href="#" class="btn btn-secondary my-2">Coaching and Training</a>
                 </p>
@@ -89,142 +89,162 @@
         </div>
     </section>
 
-    <!--Something about services, conference talks-->
+    <!--TODO: Something about services, conference talks-->
     <section>
-    <div class="album py-5 bg-light">
-        <div class="container">
+        <div class="album py-5 bg-light">
+            <div class="container">
 
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="images/lego_group.png" alt="Tables setup with groups of chairs">
-                        <div class="card-body">
-                            <p class="card-text">Bring groups of twenty together for novel workshops.</p>
-                        </div>
-                        <div class="accordion">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="workshops">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseWorkshop" aria-expanded="true"
-                                            aria-controls="collapseWorkshop">
-                                        Workshops
-                                    </button>
-                                </h2>
-                                <div id="collapseWorkshop" class="accordion-collapse collapse show"
-                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <strong><a href="https://www.infoq.com/presentations/tdd-lego/">SDEC13 - TDD
-                                            LEGO</a></strong>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="images/lego_group.png" alt="Tables setup with groups of chairs">
+                            <div class="card-body">
+                                <p class="card-text">Bring groups of twenty together for novel workshops.</p>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="workshops">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseWorkshop" aria-expanded="false"
+                                                aria-controls="collapseWorkshop">Workshops
+                                        </button>
+                                    </h2>
+                                    <div id="collapseWorkshop" class="accordion-collapse collapse"
+                                         aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">SDEC13 - <a
+                                                href="https://www.infoq.com/presentations/tdd-lego/">TDD
+                                            LEGO</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="images/speaking.png" alt="Bryan Beecham speaking on a stage"/>
-                        <div class="card-body">
-                            <p class="card-text">Are you looking for a speaker for an event? Contact us to talk
-                                about the topics we cover.</p>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="images/speaking.png" alt="Bryan Beecham speaking on a stage"/>
+                            <div class="card-body">
+                                <p class="card-text">Are you looking for a speaker for an event? Our network of great
+                                    speakers covers a wide range of topics to motivate your group!</p>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="talks">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseTalks" aria-expanded="false"
+                                                aria-controls="collapseTalks">
+                                            Talks
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTalks" class="accordion-collapse collapse"
+                                         aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Agile Testing Days
+                                            - <a href="https://www.youtube.com/watch?v=TAoQv4s5nn4">The Human Refactor
+                                            Experiment</a><br/>
+                                            AgileTO - <a href="https://www.youtube.com/watch?v=Ox8ZCySgHVY">XP Values,
+                                            Principles, and Practices</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--                        https://www.infoq.com/interviews/beecham-xp-not-dead/-->
+                            <!--                        https://www.agilealliance.org/resources/videos/epic-refactoring-applying-the-epic-continuous-improvement-cycle/-->
+
+
+                            <!--                        Podcast-->
+                            <!--                        https://www.youtube.com/watch?v=k6t4t2nZpK4-->
+
+                            <!--                        Training-->
+                            <!--                        https://www.youtube.com/watch?v=uq0qX6aOYO8-->
+                            <!--                        https://www.youtube.com/watch?v=UWeDR6sdX-o-->
                         </div>
-                        <div class="accordion">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="talks">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                        Talks
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <a href="https://www.youtube.com/watch?v=Ox8ZCySgHVY">Agile Testing Days
-                                            - The Human Refactor Experiment</a>
-                                        <a href="https://www.youtube.com/watch?v=Ox8ZCySgHVY">AgileTO - XP
-                                            Values, Principles, and Practices</a><br/>
+
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="images/tdd_cycle.png" alt="Test Driven Development (TDD) hand drawn chart"/>
+                            <div class="card-body">
+                                <p class="card-text">Let us teach your team concepts like Test Driven Development,
+                                    Refactoring with our unique, proven approaches.</p>
+                            </div>
+                                                        <div class="accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="training">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseTraining" aria-expanded="false"
+                                                aria-controls="collapseTraining">
+                                            Training
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTraining" class="accordion-collapse collapse"
+                                         aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            LiveLessons -
+                                            <a href="https://www.youtube.com/watch?v=uq0qX6aOYO8">TDD, Refactoring and Pair Programming</a><br/>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--                        https://www.youtube.com/watch?v=TAoQv4s5nn4-->
-                        <!--                        https://www.infoq.com/interviews/beecham-xp-not-dead/-->
-                        <!--                        https://www.agilealliance.org/resources/videos/epic-refactoring-applying-the-epic-continuous-improvement-cycle/-->
-
-
-                        <!--                        Workshops-->
-                        <!--                        https://www.infoq.com/presentations/tdd-lego/-->
-
-                        <!--                        Podcast-->
-                        <!--                        https://www.youtube.com/watch?v=k6t4t2nZpK4-->
-
-                        <!--                        Training-->
-                        <!--                        https://www.youtube.com/watch?v=uq0qX6aOYO8-->
-                        <!--                        https://www.youtube.com/watch?v=UWeDR6sdX-o-->
                     </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                 xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                 preserveAspectRatio="xMidYMid slice" focusable="false"><title>Extreme Programming
+                                (XP)</title>
+                                <rect width="100%" height="100%" fill="#55595c"/>
+                                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Extreme Programming (XP)</text>
+                            </svg>
 
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="images/tdd_cycle.png" alt="Test Driven Development (TDD) hand drawn chart"/>
-                        <div class="card-body">
-                            <p class="card-text">Let us teach your team concepts like Test Driven Development,
-                                Refactoring with our unique, proven approaches.</p>
+                            <div class="card-body">
+                                <p class="card-text">Improve the quality of your work and enjoyment of your development
+                                    team
+                                    through learning about simple design and the extreme programming (XP) framework.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                             preserveAspectRatio="xMidYMid slice" focusable="false"><title>Extreme Programming
-                            (XP)</title>
-                            <rect width="100%" height="100%" fill="#55595c"/>
-                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Extreme Programming (XP)</text>
-                        </svg>
 
-                        <div class="card-body">
-                            <p class="card-text">Improve the quality of your work and enjoyment of your development team
-                                through learning about simple design and the extreme programming (XP) framework.</p>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                 xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                 preserveAspectRatio="xMidYMid slice" focusable="false"><title>Technical
+                                Workshops</title>
+                                <rect width="100%" height="100%" fill="#55595c"/>
+                                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Technical Workshops</text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">Have us deep dive on your code with you to help improve your
+                                    quality
+                                    and increase your joy. We'll cover whatever topics are most helpful.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                 xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                 preserveAspectRatio="xMidYMid slice" focusable="false"><title>Group Programming</title>
+                                <rect width="100%" height="100%" fill="#55595c"/>
+                                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Group Programming</text>
+                            </svg>
 
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                             preserveAspectRatio="xMidYMid slice" focusable="false"><title>Technical Workshops</title>
-                            <rect width="100%" height="100%" fill="#55595c"/>
-                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Technical Workshops</text>
-                        </svg>
-
-                        <div class="card-body">
-                            <p class="card-text">Have us deep dive on your code with you to help improve your quality
-                                and increase your joy. We'll cover whatever topics are most helpful.</p>
+                            <div class="card-body">
+                                <p class="card-text">Practice good techniques while cross-training and improving your
+                                    understanding of your systems with Pair and Mob/Ensemble Programming.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                             preserveAspectRatio="xMidYMid slice" focusable="false"><title>Group Programming</title>
-                            <rect width="100%" height="100%" fill="#55595c"/>
-                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Group Programming</text>
-                        </svg>
 
-                        <div class="card-body">
-                            <p class="card-text">Practice good techniques while cross-training and improving your
-                                understanding of your systems with Pair and Mob/Ensemble Programming.</p>
-                        </div>
-                    </div>
                 </div>
-
             </div>
         </div>
-    </div>
     </section>
     <section class="py-5 text-center container">
         <h1 class="fw-light">Strength through Partnerships.</h1>
