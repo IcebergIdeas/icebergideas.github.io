@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RigBrief Support</title>
+    <style>
+        body {
+            font-family: Roboto, "Noto Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+            line-height: 1.6;
+            color: #111;
+            max-width: 720px;
+            margin: 2rem auto;
+            padding: 0 1.25rem;
+        }
+
+        h1, h2 {
+            line-height: 1.25;
+        }
+
+        h2 {
+            margin-top: 2rem;
+            font-size: 1.2rem;
+        }
+
+        a {
+            color: #c45f00;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 0.1rem 0.35rem;
+            border-radius: 4px;
+        }
+
+        ol, ul {
+            padding-left: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+<h1>RigBrief Support</h1>
+<p>RigBrief is a live-performance setlist app for guitarists. Organize songs, build named setlists, transpose on stage,
+    and navigate chord sections quickly during rehearsals and gigs.</p>
+
+<h2>Getting Started</h2>
+<ol>
+    <li>Launch RigBrief. The <strong>Demo</strong> setlist includes three sample songs.</li>
+    <li>Use <strong>All</strong> on Home to browse your library and check songs into the selected setlist.</li>
+    <li>Switch to <strong>Setlist</strong> to preview only the active setlist before tapping <strong>Start Set</strong>.
+    </li>
+    <li>Import your own library with the download button on Home (JSON export from another device or backup file).</li>
+</ol>
+
+<h2>Common Tasks</h2>
+<ul>
+    <li><strong>Multiple setlists:</strong> Use the setlist picker on Home to create, rename, switch, or delete
+        setlists. The Demo setlist cannot be deleted.
+    </li>
+    <li><strong>Add or edit a song:</strong> Tap <strong>+</strong> to add a song, or the pencil icon on a row to edit.
+    </li>
+    <li><strong>Transpose a song:</strong> On the performance dashboard, use the key controls to shift chords up or down
+        by semitone.
+    </li>
+    <li><strong>Export your library:</strong> Tap the upload button on Home to export songs and setlists as JSON.</li>
+    <li><strong>Song notes:</strong> Open notes from the dashboard while performing. Notes are saved on your device.
+    </li>
+</ul>
+
+<h2>Import / Export Format</h2>
+<p>RigBrief uses a JSON library file. Current exports use schema version 2 and include your songs, named setlists, and
+    selected setlist ID. Older v1 files that only include <code>activeSetlistSongIDs</code> are still supported.</p>
+
+<h2>Bundled Content</h2>
+<p>The app ships with three RigBrief demo songs only. Any other charts or setlists are added by you through import or
+    manual entry and remain on your device unless you export them.</p>
+
+<h2>Troubleshooting</h2>
+<ul>
+    <li><strong>Empty set after Start Set:</strong> Make sure the selected setlist has songs checked in, or switch the
+        Home filter to <strong>Setlist</strong> to confirm.
+    </li>
+    <li><strong>Import failed:</strong> Confirm the file is valid RigBrief JSON. Try Merge instead of Replace if you
+        want to keep existing songs.
+    </li>
+    <li><strong>Screen sleeps during performance:</strong> RigBrief keeps the screen awake while the dashboard is open.
+        Return to Home if you are not performing.
+    </li>
+</ul>
+
+<h2>Contact</h2>
+<p>If you have questions, contact: <a href="mailto:info@icebergideas.com">info@icebergideas.com</a></p>
+<p>© 2026 Iceberg Ideas Inc.</p>
+<p><a href="../policies/rigbrief_android.html">Privacy Policy</a></p>
+</body>
+</html>
